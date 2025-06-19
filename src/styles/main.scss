@@ -1,0 +1,66 @@
+@use 'variaveis';
+@use 'header';
+@use 'hero';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: variaveis.$corFundo;
+}
+
+@mixin text($font-size: 16px) {
+    font-size: $font-size;
+    line-height: $font-size + 10px;
+    color: variaveis.$corTextoPrimaria;
+}
+
+@mixin title($font-size: 20px) {
+    @include text($font-size);
+    color: variaveis.$corTituloPrimario
+}
+
+.text--big {
+    @include text(18px);
+
+    @media (max-width: 767px) {
+        @include text(16px);
+    }
+}
+
+.text {
+    @include text();
+}
+
+.title--big {
+    @include title(40px);
+
+    @media (max-width: 767px) {
+        @include title(32px);
+    }
+}
+
+.title {
+    @include title(32px);
+}
+
+.button {
+    height: 60px;
+    font-size: 20px;
+    width: 100%;
+    text-decoration: none;
+    background-color: variaveis.$corFundoBotao;
+    padding: 8px 14px;
+    border-radius: 4px;
+    color: variaveis.$corTituloPrimario;
+    text-transform: uppercase;
+
+    @media (max-width: 767px) {
+        height: 40px;
+        font-size: 16px;
+    }
+}

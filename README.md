@@ -16,3 +16,6 @@ Embora o exemplo da aula tenha sugerido filmes, optei por criar uma landing page
 **Breve descrição:**
 Omniscient Reader's Viewpoint é uma obra de ação, fantasia e suspense que narra a história de um homem comum que vê o mundo real se transformar no cenário catastrófico de uma web novel que ele acompanhava há anos.
 A trama é cheia de reviravoltas, desafios de sobrevivência e escolhas impactantes.
+
+
+Porque quando eu uso o _ com o SASS ele só puxa o arquivo main.scss, mesmo quando eu coloco pra ele procurar todos os arquivos *.scss?

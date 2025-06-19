@@ -1,0 +1,27 @@
+{
+  "name": "exercicio-21",
+  "version": "1.0.0",
+  "description": "Criação de página para exercicio das tecnologias aprendidas ",
+  "homepage": "https://github.com/o-matheus/front_21_exercicio_ebac#readme",
+  "bugs": {
+    "url": "https://github.com/o-matheus/front_21_exercicio_ebac/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/o-matheus/front_21_exercicio_ebac.git"
+  },
+  "license": "ISC",
+  "author": "Matheus Aguiar",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp watch",
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.89.2"
+  }
+}
