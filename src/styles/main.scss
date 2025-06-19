@@ -1,12 +1,15 @@
 @use 'variaveis';
 @use 'header';
 @use 'hero';
+@use 'personagens';
+@use 'leitura';
+@use 'faq';
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    list-style: none;
 }
 
 body {
@@ -26,6 +29,7 @@ body {
 
 .text--big {
     @include text(18px);
+    margin-bottom: 16px;
 
     @media (max-width: 767px) {
         @include text(16px);
@@ -38,6 +42,8 @@ body {
 
 .title--big {
     @include title(40px);
+    margin-bottom: 20px;
+    text-align: center;
 
     @media (max-width: 767px) {
         @include title(32px);
@@ -46,6 +52,12 @@ body {
 
 .title {
     @include title(32px);
+    margin-bottom: 16px;
+}
+.title--small {
+    @include title(20px);
+    margin-bottom: 16px;
+    text-align: center;
 }
 
 .button {
@@ -60,7 +72,7 @@ body {
     text-transform: uppercase;
 
     @media (max-width: 767px) {
-        height: 40px;
         font-size: 16px;
+        
     }
 }

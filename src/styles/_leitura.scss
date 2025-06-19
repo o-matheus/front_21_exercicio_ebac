@@ -1,0 +1,46 @@
+@use 'variaveis';
+
+.leitura {
+    max-width: 1100px;
+    margin: 0 auto 60px;
+
+    &__cards {
+        display: flex;
+        justify-content: space-evenly;
+        &__item {
+            background-color: #121212;
+            max-width: 300px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            
+            .card__img-webtoon {
+                max-width: 350px;
+                margin-bottom: 3px;
+            }
+            .card__img-orv {
+                max-width: 150px;
+            }
+            .card__img-naver {
+                max-width: 140px;
+                margin: 61px 0;
+            }
+
+            .text {
+                text-align: center;
+            }
+
+            .button__leitura {
+                background-color: #00dc64		;
+                color: #000;
+                padding: 8px 16px;
+                font-size: 16px;
+                font-weight: bold;
+                border-radius: 4px;
+                border: none;
+                margin: 16px 0;
+
+            }
+        }
+    }
+}

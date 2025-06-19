@@ -11,15 +11,13 @@
         align-items: center;
         padding: 8px 36px;
         background-color: variaveis.$corFundo ;
-        width: 1500px;
+        max-width: 1500px;
         margin: 0 auto;
 
         @media (max-width: 768px) {
             padding: 0;
-
         }
     }
-
 
     &__logo {
         height: 90px;
@@ -28,4 +26,11 @@
             height: 70px;
         }
     }
+
+    &__link {
+        .button {
+            height: 20px;
+        }
+    }
+
 }
