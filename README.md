@@ -23,3 +23,5 @@ Porque quando eu uso o _ com o SASS ele só puxa o arquivo main.scss, mesmo quan
 Estou com dificuldade para lembrar como ajusta a altura do botão no header. (Não consegui ainda)
 
 Tenho que ajustar o texto do hero, para dar um espaçamento das laterais. 
+
+o filter invert no css é muito bom :) 

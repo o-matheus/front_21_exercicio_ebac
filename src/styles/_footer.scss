@@ -1,0 +1,29 @@
+@use 'variaveis';
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid variaveis.$corTextoPrimaria;
+    padding: 20px;
+
+    @media (max-width: 768px) {
+        display: block;
+        text-align: center;
+    }
+    
+    .social { 
+        display: flex;
+        justify-content: center;
+        &__logo {
+            filter: invert(1);
+            max-width: 24px;
+            margin: 0px 8px;
+        }
+
+        @media (max-width:768px) {
+            margin: 16px 0;
+        }
+    }
+
+}

@@ -5,7 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leitor Onisciente</title>
+    <link rel="shortcut icon" href="img/orv_logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../dist/css/main.css">
+
 </head>
 
 <body>
@@ -56,98 +63,279 @@
 
         <div class="personagens__container">
             <nav class="personagens__tabs">
-                <button class="button__tabs button__tabs--active">
+                <button data-tab-button="dokja" class="button__tabs button__tabs--active">
                     Kim Dokja
                 </button>
-                <button class="button__tabs">
+                <button data-tab-button="joonghyuk" class="button__tabs">
                     Yoo Joonghyuk
                 </button>
-                <button class="button__tabs">
+                <button data-tab-button="yoosung" class="button__tabs">
                     Shin Yoosung
                 </button>
-                <button class="button__tabs">
+                <button data-tab-button="sooyoung" class="button__tabs">
                     Han Sooyoung
                 </button>
-                <button class="button__tabs">
+                <button data-tab-button="hyunsung" class="button__tabs">
                     Lee Hyunsung
                 </button>
-                <button class="button__tabs">
+                <button data-tab-button="heewon" class="button__tabs">
                     Jung Heewon
                 </button>
             </nav>
-
-            <div class="personagens__tabs__item">
-                <img class="personagens__tabs__item__img" src="img/dokja.jpg"
-                    alt="Kim Dokja, protagonista de Omniscient Reader's Viewpoint, com expressão séria, cabelo preto bagunçado e usando camisa preta com casaco branco, ao fundo um céu ao entardecer.">
-                <div class="personagens__tabs__item__content">
-                    <h4 class="title">
-                        Kim Dokja – O Leitor Onisciente
-                    </h4>
-                    <p class="text--big">
-                        Por anos, Kim Dokja foi o único leitor fiel de um webnovel obscuro chamado *Three Ways to
-                        Survive
-                        the Apocalypse*. Ele conhecia cada detalhe da história, cada personagem, cada reviravolta.
-                    </p>
-                    <p class="text--big">
-                        Mas em um dia comum, o mundo começou a seguir exatamente o enredo daquela obra.
-                    </p>
-                    <p class="text--big">
-                        Sem poderes próprios, sem força sobre-humana, Dokja tem apenas uma vantagem: o conhecimento
-                        absoluto
-                        de tudo que vai acontecer.
-                    </p>
-                    <p class="text--big">
-                        Com sua inteligência estratégica, manipulações calculadas e uma determinação que beira a
-                        obsessão,
-                        ele trilha o caminho de um espectador que precisa se transformar em protagonista... não apenas
-                        da
-                        história, mas da própria sobrevivência.
-                    </p>
-
+            <div class="personagens__tabs__itens">
+                <div data-tab-id="dokja" class="personagens__tabs__item personagens__tabs__item--is-active">
+                    <img class="personagens__tabs__item__img" src="img/dokja.jpg"
+                        alt="Kim Dokja, protagonista de Omniscient Reader's Viewpoint, com expressão séria, cabelo preto bagunçado e usando camisa preta com casaco branco, ao fundo um céu ao entardecer.">
+                    <div class="personagens__tabs__item__content">
+                        <h4 class="title">
+                            Kim Dokja – O Leitor Onisciente
+                        </h4>
+                        <p class="text--big">
+                            Por anos, Kim Dokja foi o único leitor fiel de um webnovel obscuro chamado *Three Ways to
+                            Survive
+                            the Apocalypse*. Ele conhecia cada detalhe da história, cada personagem, cada reviravolta.
+                        </p>
+                        <p class="text--big">
+                            Mas em um dia comum, o mundo começou a seguir exatamente o enredo daquela obra.
+                        </p>
+                        <p class="text--big">
+                            Sem poderes próprios, sem força sobre-humana, Dokja tem apenas uma vantagem: o conhecimento
+                            absoluto
+                            de tudo que vai acontecer.
+                        </p>
+                        <p class="text--big">
+                            Com sua inteligência estratégica, manipulações calculadas e uma determinação que beira a
+                            obsessão,
+                            ele trilha o caminho de um espectador que precisa se transformar em protagonista... não
+                            apenas
+                            da
+                            história, mas da própria sobrevivência.
+                        </p>
+                    </div>
+                </div>
+                <div data-tab-id="joonghyuk" class="personagens__tabs__item">
+                    <img class="personagens__tabs__item__img" src="img/joonghyuk.jpg"
+                        alt="Kim Dokja, protagonista de Omniscient Reader's Viewpoint, com expressão séria, cabelo preto bagunçado e usando camisa preta com casaco branco, ao fundo um céu ao entardecer.">
+                    <div class="personagens__tabs__item__content">
+                        <h4 class="title">
+                            Yoo Joonghyuk – O Retornado Imortal
+                        </h4>
+                        <p class="text--big">
+                            Yoo Joonghyuk é o protagonista original de Three Ways to Survive the Apocalypse. Um lutador
+                            implacável, moldado por incontáveis regressões.
+                        </p>
+                        <p class="text--big">
+                            Frio, direto e muitas vezes brutal, Joonghyuk carrega sozinho o peso de ter visto o mundo
+                            acabar diversas vezes. </p>
+                        <p class="text--big">
+                            Com habilidades de combate sobre-humanas, força de vontade inabalável e um senso de missão
+                            extremo, ele faz qualquer sacrifício necessário para atingir seu objetivo: salvar a
+                            humanidade.
+                        </p>
+                        <p class="text--big">
+                            Sua relação com Kim Dokja é complexa, oscilando entre rivalidade e parceria. Mesmo sem
+                            entender completamente o novo rumo da história, Joonghyuk segue avançando... sempre pronto
+                            para lutar mais uma vez.
+                        </p>
+                    </div>
+                </div>
+                <div data-tab-id="yoosung" class="personagens__tabs__item">
+                    <img class="personagens__tabs__item__img" src="img/yoosung.jpg"
+                        alt="Kim Dokja, protagonista de Omniscient Reader's Viewpoint, com expressão séria, cabelo preto bagunçado e usando camisa preta com casaco branco, ao fundo um céu ao entardecer.">
+                    <div class="personagens__tabs__item__content">
+                        <h4 class="title">
+                            Shin Yoosung – A Sobrevivente da Catástrofe
+                        </h4>
+                        <p class="text--big">
+                            Shin Yoosung é uma das personagens mais impactantes de Three Ways to Survive the Apocalypse.
+                            Ainda criança, ela viveu incontáveis vidas em mundos destruídos, sempre lutando para
+                            sobreviver.
+                        </p>
+                        <p class="text--big">
+                            Marcada por traumas, mas com um coração forte, Yoosung demonstra uma coragem impressionante
+                            para alguém tão jovem.
+                        </p>
+                        <p class="text--big">
+                            Seus poderes têm ligação com feras monstruosas, e sua habilidade de domar criaturas a torna
+                            uma aliada poderosa.
+                        </p>
+                        <p class="text--big">
+                            Ao longo da história, ela constrói uma relação de afeto e lealdade com Kim Dokja e Yoo
+                            Joonghyuk, buscando não apenas sobreviver, mas proteger aqueles que se tornaram sua nova
+                            família.
+                        </p>
+                    </div>
+                </div>
+                <div data-tab-id="sooyoung" class="personagens__tabs__item">
+                    <img class="personagens__tabs__item__img" src="img/sooyoung.jpg"
+                        alt="Kim Dokja, protagonista de Omniscient Reader's Viewpoint, com expressão séria, cabelo preto bagunçado e usando camisa preta com casaco branco, ao fundo um céu ao entardecer.">
+                    <div class="personagens__tabs__item__content">
+                        <h4 class="title">
+                            Han Sooyoung – A Trapaceira Irreverente
+                        </h4>
+                        <p class="text--big">
+                            Han Sooyoung é uma escritora talentosa, sarcástica e cheia de segredos. Conhecida por sua
+                            língua afiada e atitude desafiadora, ela prefere agir com ironia e manipulação do que com
+                            força bruta.
+                        </p>
+                        <p class="text--big">
+                            Sua especialidade são as habilidades de replicação e trapaça, copiando os poderes de outros
+                            de forma inesperada e inteligente.
+                        </p>
+                        <p class="text--big">
+                            Mesmo com seu jeito provocador e impulsivo, ao longo da história ela demonstra um senso de
+                            lealdade único, principalmente em relação a Kim Dokja.
+                        </p>
+                        <p class="text--big">
+                            Por trás das provocações e piadas, há uma personagem complexa, com motivações profundas e um
+                            papel decisivo no destino da história.
+                        </p>
+                    </div>
+                </div>
+                <div data-tab-id="hyunsung" class="personagens__tabs__item">
+                    <img class="personagens__tabs__item__img" src="img/hyunsung.jpg"
+                        alt="Kim Dokja, protagonista de Omniscient Reader's Viewpoint, com expressão séria, cabelo preto bagunçado e usando camisa preta com casaco branco, ao fundo um céu ao entardecer.">
+                    <div class="personagens__tabs__item__content">
+                        <h4 class="title">
+                            Lee Hyunsung – O Cavaleiro de Aço
+                        </h4>
+                        <p class="text--big">
+                            Lee Hyunsung é um ex-soldado sul-coreano, conhecido por sua força física, disciplina e senso
+                            de justiça.
+                        </p>
+                        <p class="text--big">
+                            Leal, protetor e muitas vezes ingênuo, ele se torna o escudo do grupo, sempre disposto a
+                            colocar sua vida em risco para proteger os aliados.
+                        </p>
+                        <p class="text--big">
+                            Sua habilidade especial é a Transformação de Aço, que fortalece seu corpo como uma
+                            verdadeira armadura viva.
+                        </p>
+                        <p class="text--big">
+                            Mesmo enfrentando dilemas morais e situações extremas, Hyunsung mantém sua integridade e seu
+                            espírito altruísta, sendo uma âncora emocional para o grupo em meio ao caos.
+                        </p>
+                    </div>
+                </div>
+                <div data-tab-id="heewon" class="personagens__tabs__item">
+                    <img class="personagens__tabs__item__img" src="img/heewon.jpg"
+                        alt="Kim Dokja, protagonista de Omniscient Reader's Viewpoint, com expressão séria, cabelo preto bagunçado e usando camisa preta com casaco branco, ao fundo um céu ao entardecer.">
+                    <div class="personagens__tabs__item__content">
+                        <h4 class="title">
+                            Jung Heewon – A Juíza das Chamas
+                        </h4>
+                        <p class="text--big">
+                            Jung Heewon é uma ex-advogada com um forte senso de justiça e uma personalidade explosiva
+                        </p>
+                        <p class="text--big">
+                            Corajosa, direta e sem paciência para injustiças, ela se torna a força moral do grupo,
+                            sempre disposta a lutar contra o que considera errado.
+                        </p>
+                        <p class="text--big">
+                            Sua habilidade especial é a Autoridade da Justiça, que a permite desencadear poderosos
+                            ataques flamejantes contra inimigos que ela julga culpados.
+                        </p>
+                        <p class="text--big">
+                            Com sua determinação inabalável e seu coração protetor, Heewon é uma combatente feroz e uma
+                            amiga leal, que nunca hesita em defender quem precisa.
+                        </p>
+                    </div>
                 </div>
             </div>
-
-
-        </div>
     </section>
     <section id="leitura" class="leitura">
         <h2 class="title--big">
-            Começar a ler 
+            Começar a ler
         </h2>
         <ul class="leitura__cards">
             <li class="leitura__cards__item">
                 <img class="card__img-webtoon" src="img/webtoon_logo.png" alt="Logo Webtoon">
                 <h4 class="title--small">Leia Grátis no Webtoon</h4>
-                <p class="text">Acompanhe os capítulos traduzidos oficialmente para o inglês.</p>
-                <button class="button__leitura">Ler Agora</button>
+                <p class="text">Acompanhe os capítulos traduzidos para o inglês.</p>
+                <a class="button__leitura"
+                    href="https://www.webtoons.com/en/action/omniscient-reader/list?title_no=2154">Ler Agora</a>
             </li>
             <li class="leitura__cards__item">
                 <img class="card__img-orv" src="img/orv_logo.png" alt="Logo Webtoon">
                 <h4 class="title--small">Compre a Edição Impressa</h4>
                 <p class="text">Tenha Omniscient Reader na sua estante. Versão oficial em inglês.</p>
-                <button class="button__leitura">Comprar na Amazon</button>
+                <a class="button__leitura" href="https://amzn.to/3HLUPlN">Comprar na Amazon</a>
             </li>
             <li class="leitura__cards__item">
                 <img class="card__img-naver" src="img/naver_logo.png" alt="Logo Naver">
                 <h4 class="title--small">Leia no Site Oficial </h4>
                 <p class="text">Leia Omniscient Reader direto da fonte. Versão oficial em coreano.</p>
-                <button class="button__leitura">Ler Agora</button>
+                <a class="button__leitura" href="https://comic.naver.com/webtoon/list?titleId=747269">Ler Agora</a>
             </li>
         </ul>
     </section>
     <section class="faq">
         <h2 class="title--big">Perguntas Frequentes</h2>
         <ul class="faq__questions">
-            <li class="faq__questions__item">
-                <div class="faq__questions__item__question">
+            <li class="faq__questions__item ">
+                <div class="faq__questions__item__question" data-faq-question="">
                     Qual é a diferença entre Mangá e Manhwa?
                 </div>
-                <div class="faq__questions__item__answer">
-
+                <div class="faq__questions__item__answer text--big">
+                    Mangá é o termo usado para quadrinhos japoneses, tradicionalmente lidos da direita para a esquerda.
+                    Já o manhwa é o equivalente sul-coreano, com leitura da esquerda para a direita. Além da diferença
+                    de leitura, o estilo de arte e os temas abordados também podem variar, refletindo a cultura de cada
+                    país.
+                </div>
+            </li>
+            <li class="faq__questions__item ">
+                <div class="faq__questions__item__question" data-faq-question="">
+                    Para quem é essa história?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    Omniscient Reader's Viewpoint é indicado para fãs de fantasia, ação e narrativas sobre sobrevivência. A obra mistura elementos de jogos de sobrevivência, sistemas de níveis e desenvolvimento psicológico. Se você gosta de histórias com personagens em situações extremas, estratégias e mistérios, vai gostar muito dessa leitura.
+                </div>
+            </li>
+            <li class="faq__questions__item ">
+                <div class="faq__questions__item__question" data-faq-question="">
+                    Existe tradução em português?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    Atualmente, a obra não possui uma tradução oficial completa em português. É possível encontrar alguns capítulos traduzidos por fãs, mas a forma oficial de acompanhar a história é em inglês (pela Webtoon) ou em coreano (pela Naver).
+                </div>
+            </li>
+            <li class="faq__questions__item ">
+                <div class="faq__questions__item__question" data-faq-question="">
+                    Quem é o autor?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    O manhwa é escrito por Sing N Song e ilustrado por Sleepy-C. A história é baseada em uma web novel de sucesso que conquistou milhares de leitores ao redor do mundo antes de ganhar sua adaptação para os quadrinhos.
                 </div>
             </li>
         </ul>
     </section>
+    <footer class="footer">
+        <p class="text">2025 © Matheus Aguiar- Projeto academico</p>
+        <ul class="social">
+            <li>
+                <a href="https://www.linkedin.com/in/matheus-aguiar-1b0192264/" target="_blank">
+                    <img class="social__logo" src="img/linkedin_logo.png" alt="Logo Linkedin">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/o-matheus" target="_blank">
+                    <img class="social__logo" src="img/github_logo.png" alt="Logo GitHub">
+                </a>
+            </li>
+            <li>
+                <a href="https://discord.gg/hb2VgCRNsf" target="_blank">
+                    <img class="social__logo" src="img/discord_logo.png" alt="Logo Discord">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/@dev.vida" target="_blank">
+                    <img class="social__logo" src="img/tiktok_logo.png" alt="Logo TikTok">
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="./script/main.js"></script>
 </body>
 
 </html>

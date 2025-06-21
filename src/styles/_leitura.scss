@@ -2,25 +2,39 @@
 
 .leitura {
     max-width: 1100px;
-    margin: 0 auto 60px;
+    margin: 0 auto 100px;
 
     &__cards {
         display: flex;
         justify-content: space-evenly;
+
+        @media (max-width:768px) {
+            display: block;
+        }
+
         &__item {
-            background-color: #121212;
+            background-color: variaveis.$corFundoBotaoSecundaria;
             max-width: 300px;
             text-align: center;
             padding: 20px;
             border-radius: 10px;
-            
+
+            @media (max-width:768px) {
+                margin: 0 auto;
+                margin-bottom: 30px;
+                max-width: 450px;
+                width: 80%;
+            }
+
             .card__img-webtoon {
                 max-width: 350px;
                 margin-bottom: 3px;
             }
+
             .card__img-orv {
                 max-width: 150px;
             }
+
             .card__img-naver {
                 max-width: 140px;
                 margin: 61px 0;
@@ -31,7 +45,8 @@
             }
 
             .button__leitura {
-                background-color: #00dc64		;
+                display: block;
+                background-color: #00dc64;
                 color: #000;
                 padding: 8px 16px;
                 font-size: 16px;
@@ -39,6 +54,11 @@
                 border-radius: 4px;
                 border: none;
                 margin: 16px 0;
+                text-decoration: none;
+
+                &:hover {
+        background-color: lighten(#00dc64, 3%);
+    }
 
             }
         }
